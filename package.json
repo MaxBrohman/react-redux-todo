@@ -32,10 +32,19 @@
     "lint": "eslint --fix --ext .tsx --ext .ts --ext d.ts src/"
   },
   "eslintConfig": {
+    "parser": "@typescript-eslint/parser",
     "extends": [
-      "react-app",
-      "airbnb-typescript"
-    ]
+        "airbnb-typescript",
+        "plugin:import/errors",
+        "plugin:import/warnings",
+        "plugin:import/typescript"
+    ],
+    "plugins": [
+        "@typescript-eslint"
+    ],
+    "env": {
+        "browser": true
+    }
   },
   "browserslist": {
     "production": [
