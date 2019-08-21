@@ -1,0 +1,41 @@
+.todo-list-item 
+	button
+		margin: 3px
+		width: 30px
+	.card-body
+		padding: 1rem
+	.card-header
+		padding: 0.5rem 1rem	
+	&.done
+		.card-header
+			.todo-list-item-label
+				text-decoration: line-through
+	&.important
+		.todo-list-item-label
+			font-weight: bold
+			color: steelblue
+	&.edited
+		.todo-list-item-label
+			cursor: pointer
+	&.editing
+		.todo-list-item-label
+			cursor: text
+		.todo-list-item-description
+			width: 100%
+	&.veryImportant
+		.todo-list-item-label
+			font-weight: bold
+			color: #ffc107
+	.todo-list-item-label
+		margin-top: 0.3rem
+		user-select: none
+		margin-bottom: 0
+		flex-grow: 1
+		outline: none
+	.date-badge
+		margin-right: 0.3rem
+	.todo-list-item-date
+		font-size: 70%
+		
+
+
